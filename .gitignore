@@ -2,7 +2,7 @@
 *.class
 
 # Ignore les fichiers générés pendant l'exécution du programme
-result.out
+result_out
 
 # Dossiers à ignorer
 bin/
