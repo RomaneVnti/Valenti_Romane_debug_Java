@@ -10,7 +10,7 @@ public class AnalyticsCounter {
 	private static int pupilCount = 0;		
 	
 	public static void main(String args[]) throws Exception {
-		//Hello
+		
 		BufferedReader reader = new BufferedReader (new FileReader("symptoms.txt"));
 		String line = reader.readLine();
 
