@@ -1,0 +1,9 @@
+# Ignore les fichiers générés par l'IDE
+*.class
+
+# Ignore les fichiers générés pendant l'exécution du programme
+result.out
+
+# Dossiers à ignorer
+bin/
+target/

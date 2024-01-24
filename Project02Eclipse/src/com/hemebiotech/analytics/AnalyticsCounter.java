@@ -39,15 +39,10 @@ public class AnalyticsCounter {
         symptomWriter.writeSymptoms(symptoms);
     }
 
-    public static void main(String[] args) {
-        ISymptomReader reader = new ReadSymptomDataFromFile("symptoms.txt");
-        ISymptomWriter writer = new MySymptomWriter("result.out"); // Utilisez votre propre implémentation
-
-        AnalyticsCounter analyticsCounter = new AnalyticsCounter(reader, writer);
-
-        List<String> symptomsList = analyticsCounter.getSymptoms();
-        Map<String, Integer> countedSymptoms = analyticsCounter.countSymptoms(symptomsList);
-        Map<String, Integer> sortedSymptoms = analyticsCounter.sortSymptoms(countedSymptoms);
-        analyticsCounter.writeSymptoms(sortedSymptoms);
+    public void execute() {
+        List<String> symptomsList = getSymptoms();
+        Map<String, Integer> countedSymptoms = countSymptoms(symptomsList);
+        Map<String, Integer> sortedSymptoms = sortSymptoms(countedSymptoms);
+        writeSymptoms(sortedSymptoms);
     }
 }
