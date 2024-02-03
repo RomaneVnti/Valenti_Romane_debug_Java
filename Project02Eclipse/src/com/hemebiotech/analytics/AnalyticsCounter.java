@@ -1,9 +1,10 @@
 package com.hemebiotech.analytics;
 
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
+
 
 /**
  * A class for analyzing symptoms and generating a report.
@@ -47,17 +48,15 @@ public class AnalyticsCounter {
         return symptomCount;
     }
 
-    /**
+        /**
      * Sort symptoms alphabetically.
      *
      * @param symptoms The unsorted symptoms.
      * @return A map with sorted symptoms.
      */
     public Map<String, Integer> sortSymptoms(Map<String, Integer> symptoms) {
-        LinkedHashMap<String, Integer> sortedSymptoms = new LinkedHashMap<>();
-        symptoms.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey())
-                .forEachOrdered(entry -> sortedSymptoms.put(entry.getKey(), entry.getValue()));
+        // Use treeMap for alphabetical sortings.
+        TreeMap<String, Integer> sortedSymptoms = new TreeMap<>(symptoms);
         return sortedSymptoms;
     }
 
