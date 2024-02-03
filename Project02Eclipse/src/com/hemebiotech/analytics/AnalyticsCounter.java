@@ -16,7 +16,7 @@ public class AnalyticsCounter {
     /**
      * Constructor for AnalyticsCounter.
      *
-     * @param reader The symptom reader.
+     * @param reader The symptom reader. 
      * @param writer The symptom writer.
      */
     public AnalyticsCounter(ISymptomReader reader, ISymptomWriter writer) {
