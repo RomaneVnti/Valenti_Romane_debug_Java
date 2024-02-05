@@ -15,7 +15,7 @@ public class Main {
         ISymptomReader reader = new ReadSymptomDataFromFile("symptoms.txt");
 
         // Create an ISymptomWriter object
-        ISymptomWriter writer = new MySymptomWriter("result_out");
+        ISymptomWriter writer = new WriteSymptomDataToFile("result.out");
 
         // Create an AnalyticsCounter object
         AnalyticsCounter analyticsCounter = new AnalyticsCounter(reader, writer);

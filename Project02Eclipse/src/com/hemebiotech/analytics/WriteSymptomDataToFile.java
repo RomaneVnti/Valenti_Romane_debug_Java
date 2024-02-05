@@ -8,16 +8,16 @@ import java.util.Map;
 /**
  * An implementation of ISymptomWriter that writes symptoms to a file.
  */
-public class MySymptomWriter implements ISymptomWriter {
+public class WriteSymptomDataToFile implements ISymptomWriter {
 
     private String outputFile;
 
     /**
-     * Constructor for MySymptomWriter.
+     * Constructor for WriteSymptomDataToFile.
      *
      * @param outputFile The file to write symptoms to.
      */
-    public MySymptomWriter(String outputFile) {
+    public WriteSymptomDataToFile(String outputFile) {
         this.outputFile = outputFile;
     }
 
