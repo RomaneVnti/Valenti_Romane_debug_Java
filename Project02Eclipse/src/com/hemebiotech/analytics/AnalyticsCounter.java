@@ -66,7 +66,7 @@ public class AnalyticsCounter {
      * @param symptoms The symptoms to write.
      */
     public void writeSymptoms(Map<String, Integer> symptoms) {
-        symptomWriter.writeSymptoms(symptoms);
+        symptomWriter.WriteSymptoms(symptoms);
     }
 
     /**

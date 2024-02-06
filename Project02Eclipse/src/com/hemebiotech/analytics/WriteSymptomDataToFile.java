@@ -27,7 +27,7 @@ public class WriteSymptomDataToFile implements ISymptomWriter {
      * @param symptoms A map containing symptoms as keys and their occurrences as values.
      */
     @Override
-    public void writeSymptoms(Map<String, Integer> symptoms) {
+    public void WriteSymptoms(Map<String, Integer> symptoms) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile))) {
             for (Map.Entry<String, Integer> entry : symptoms.entrySet()) {
                 writer.println(entry.getKey() + ": " + entry.getValue());
